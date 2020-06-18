@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
-  preventDefault();
+  prevent();
 });
 
-function preventDefault(){
-  let description = document.getElementById("new-task-description");
-  description.addEventListener("click", function(event){
+function prevent(){
+  let description = document.getElementById("create-task-form");
+  description.addEventListener("submit", function(event){
     event.preventDefault();
   },false)
 }
